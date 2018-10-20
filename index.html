@@ -22,13 +22,17 @@
             Guess a number between 1 and 99 in seven attempts!
           
           <br><br>
-          Random Number: <span id="numberToGuess"></span>
+          Random Number: <span id="numberToGuess">hello</span>
         </div>
       
       <script>
         //Add JavaScript
         var randomNumber = 5 + 6;
         console.log(randomNumber);
+        
+        randomNumber = Math.floor(Math.random() * 99) + 1;
+        console.log(randomNumber);
+        document.getElementById("numberToGuess").innerHTML = randomNumber
         
         
       </script>
